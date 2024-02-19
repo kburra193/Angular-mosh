@@ -19,6 +19,7 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './login/login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { LoginComponent } from './login/login.component';
       { path: 'login', component:LoginComponent},
       { path: 'admin/admin-products', component:AdminProductsComponent},
       { path: 'admin/admin-orders', component:AdminOrdersComponent}
-    ])
+    ]),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
